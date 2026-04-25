@@ -877,6 +877,29 @@ p {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Construction Page */
+.construction-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 150px 20px 100px;
+  background: var(--light);
+}
+
+.construction-section h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: var(--primary);
+}
+
+.construction-icon {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+
 
 .form-card h3 {
   margin-bottom: 2rem;
