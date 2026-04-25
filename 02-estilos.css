@@ -102,7 +102,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .nav-brand {
@@ -207,6 +207,7 @@ p {
 }
 
 .hero-text {
+  padding: 20px;
   max-width: 900px;
   animation: fadeIn 1s ease-out;
 }
@@ -360,6 +361,17 @@ p {
   position: relative;
   overflow: hidden;
   transition: var(--transition);
+}
+
+@media (min-width: 1022px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .service-item {
+    padding: 2.5rem 1.5rem;
+  }
 }
 
 .service-icon {
@@ -821,9 +833,13 @@ p {
 /* Responsive */
 @media (max-width: 992px) {
   .hero-section {
-    margin: 80px auto;
-    height: 70vh;
+    margin: 80px auto 60px;
+    height: calc(100vh - 140px);
     border-radius: 25px;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 3.5rem);
   }
 
   .contact-combined-grid {
