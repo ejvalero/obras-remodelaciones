@@ -841,10 +841,19 @@ p {
   }
 
   .container-grid,
-  .zones-content {
+  .zones-content,
+  .main-footer .footer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .main-footer .nav-brand {
+    justify-content: center;
   }
 
   .header-content {
@@ -853,7 +862,8 @@ p {
     gap: 1rem;
   }
 
-  .container-flex {
+  .container-flex,
+  .mission-vision-container {
     flex-direction: column;
   }
 }
